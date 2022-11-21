@@ -1,0 +1,64 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 250px;  /* Ex. 2fr 1fr; (Fractional Units) (Like flex-grow:) repeat(4, 100px); */
+    grid-auto-rows: minmax(150px auto);  /* Ex. 150px; */
+
+    /* Try These Properties Together */
+
+    /* grid-auto-rows: 150px; */
+    /* grid-template-rows: 200px; */  /* Ex. 200px 150px; */
+
+    grid-gap: 20px;  /* Both column-gap and row-gab */
+
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 20px; */
+
+    /* justify-content: stretch; */     /* Ex. center; start; end; space-around; */
+    /* align-content: stretch; */       /* Ex. center; baseline; left; right; safe; */
+    /* height: 100vh; */
+
+    justify-items: stretch;     /* Ex. center; auto; legacy; */
+    align-items: stretch;       /* Ex. center; start; end; */
+
+    /* grid-template-areas: */
+        /* "header header" */       /* Column 1 and 2 in Row 1 */
+        /* "sidebar content" */     /* Column 1 and 2 in Row 2 */
+        /* "sidebar content"; */    /* Column 1 and 2 in Row 3 */
+}
+
+.grid-item-1 {
+    align-self: start;      /* Ex. stretch; center; end; */
+    justify-self: stretch;  /* Ex. center; start; end; */
+}
+
+/* Try These Properties Together with grid-template-areas */
+
+/* .grid-item-1 {
+    grid-area: header;
+}
+
+.grid-item-2 {
+    grid-area: sidebar;
+}
+
+.grid-item-3 {
+    grid-area: content;
+}
+
+--------------------------------------------------------- */
+
+/* .grid-item-1 { */
+    /* grid-column: 1 / -1; */      /* grid-column-start: grid-column-end:  Ex. span 2 (Span for Two Columns) */
+    /* grid-column-start: 1; */
+    /* grid-column-end: -1; */      /* Ex. 2; 3; (Second column is actually end of the break between column 1 and 2)
+                                           -1; will span all the way to end of the column */
+/* } */
+
+/* .grid-item-2 { */
+    /* grid-row-start: 2; */  /* Row is the same as column */
+    /* grid-row-end: 3; */
+/* } */
+
+/* .grid-item-3 {
+    grid-row: span 3;
+} */

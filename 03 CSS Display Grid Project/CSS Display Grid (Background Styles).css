@@ -1,0 +1,138 @@
+/* Background Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #333;
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.grid-item {
+    font-size: 25px;
+    color: #222;
+    background-color: #379AD6;
+    padding: 20px;
+    padding-top: 50px;
+    position: relative;
+    border: 1px solid white;
+}
+
+.grid-item:nth-child(odd) {
+    background-color: #5bbdfa;
+}
+
+.grid-item::before {
+    font-size: 25px;
+    font-weight: bold;
+    top: 10px;
+    left: 15px;
+    position: absolute;
+    content: 'Grid Item';
+}
+
+.grid-item::after {
+    font-size: 25px;
+    font-weight: bold;
+    top: 10px;
+    right: 15px;
+    position: absolute;
+}
+
+.grid-item-1::after {
+    content: '1';
+}
+
+.grid-item-2::after {
+    content: '2';
+}
+
+.grid-item-3::after {
+    content: '3';
+}
+
+.grid-item-4::after {
+    content: '4';
+}
+
+.grid-item-5::after {
+    content: '5';
+}
+
+.grid-item-6::after {
+    content: '6';
+}
+
+.grid-item-7::after {
+    content: '7';
+}
+
+.grid-item-8::after {
+    content: '8';
+}
+
+.grid-item-9::after {
+    content: '9';
+}
+
+.grid-item-10::after {
+    content: '10';
+}
+
+.grid-item-11::after {
+    content: '11';
+}
+
+.side-links {
+    top: 15px;
+    right: 15px;
+    position: absolute;
+}
+
+.side-link {
+    color: white;
+    width: 180px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+.side-link-youtube {
+    background-color: red;
+}
+
+.side-link-twitter {
+    background-color: #1DA1F2;
+}
+
+.side-link-github {
+    background-color: #6e5494;
+}
+
+.side-link-text {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.side-link-icon {
+    font-size: 30px;
+    color: white;
+}
